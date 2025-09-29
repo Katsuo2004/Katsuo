@@ -1,0 +1,303 @@
+  {/* Hero Section */}
+  <section className="pt-20 pb-16 px-4">
+    <div className="container mx-auto text-center">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Hi, I'm Nguyen Van A</h1>
+        <p className="text-xl text-muted-foreground mb-8">
+          Full Stack Developer & UI/UX Designer
+        </p>
+        <div className="flex justify-center space-x-4">
+          <Button size="lg">View Projects</Button>
+          <Button variant="outline" size="lg">Download CV</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About Section */}
+  <section id="about" className="py-16 px-4 bg-muted">
+    <div className="container mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img 
+            src="https://placeholder-image-service.onrender.com/image/400x500?prompt=Professional portrait of a Vietnamese software developer with friendly smile wearing business casual attire in a modern office environment&id=edac351d-eb31-499d-aa40-d24309d2ccfc" 
+            alt="Professional portrait of Nguyen Van A in modern office setting" 
+            className="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold mb-6">About Me</h2>
+          <p className="text-muted-foreground mb-6">
+            I'm a passionate Full Stack Developer with 5+ years of experience creating 
+            innovative web applications. I specialize in React, TypeScript, Node.js, 
+            and modern UI/UX design principles.
+          </p>
+          <p className="text-muted-foreground mb-6">
+            My approach combines technical expertise with creative problem-solving 
+            to deliver exceptional user experiences that drive business growth.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <p className="font-semibold">Name:</p>
+              <p className="text-muted-foreground">Nguyen Van A</p>
+            </div>
+            <div>
+              <p className="font-semibold">Email:</p>
+              <p className="text-muted-foreground">nguyenvana@email.com</p>
+            </div>
+            <div>
+              <p className="font-semibold">Location:</p>
+              <p className="text-muted-foreground">Hanoi, Vietnam</p>
+            </div>
+            <div>
+              <p className="font-semibold">Availability:</p>
+              <p className="text-muted-foreground">Open to Work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Skills Section */}
+  <section id="skills" className="py-16 px-4">
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12">Skills & Technologies</h2>
+      <div className="grid md:grid-cols-3 gap-8">
+        <Card>
+          <CardHeader>
+            <CardTitle>Frontend</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2">
+              <li>React & Next.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Shadcn UI</li>
+              <li>Redux & Zustand</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Backend</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2">
+              <li>Node.js & Express</li>
+              <li>Python & Django</li>
+              <li>PostgreSQL & MongoDB</li>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Tools & Others</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2">
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>AWS & Vercel</li>
+              <li>Figma & Adobe XD</li>
+              <li>Agile Methodology</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  {/* Projects Section */}
+  <section id="projects" className="py-16 px-4 bg-muted">
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Project 1 */}
+        <Card className="overflow-hidden">
+          <img 
+            src="https://placeholder-image-service.onrender.com/image/400x250?prompt=Modern e-commerce dashboard with analytics charts product listings and clean UI design&id=edac351d-eb31-499d-aa40-d24309d2ccfc" 
+            alt="E-commerce dashboard interface with analytics and product management" 
+            className="w-full h-48 object-cover"
+          />
+          <CardHeader>
+            <CardTitle>E-Commerce Platform</CardTitle>
+            <CardDescription>Full-stack shopping platform</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              A complete e-commerce solution with user authentication, payment processing, 
+              and admin dashboard.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Node.js</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MongoDB</span>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Project 2 */}
+        <Card className="overflow-hidden">
+          <img 
+            src="https://placeholder-image-service.onrender.com/image/400x250?prompt=Social media app interface with feed posts user profiles and messaging features&id=edac351d-eb31-499d-aa40-d24309d2ccfc" 
+            alt="Social media application with user feed and interaction features" 
+            className="w-full h-48 object-cover"
+          />
+          <CardHeader>
+            <CardTitle>Social Media App</CardTitle>
+            <CardDescription>Real-time social platform</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              A responsive social media application with real-time messaging, 
+              post sharing, and user interactions.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Next.js</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Socket.io</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">PostgreSQL</span>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Project 3 */}
+        <Card className="overflow-hidden">
+          <img 
+            src="https://placeholder-image-service.onrender.com/image/400x250?prompt=Task management dashboard with kanban board calendar integration and productivity metrics&id=edac351d-eb31-499d-aa40-d24309d2ccfc" 
+            alt="Project management dashboard with task boards and productivity tools" 
+            className="w-full h-48 object-cover"
+          />
+          <CardHeader>
+            <CardTitle>Project Management Tool</CardTitle>
+            <CardDescription>Team collaboration platform</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              A comprehensive project management solution with task tracking, 
+              team collaboration, and progress monitoring.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Vue.js</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Express</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MySQL</span>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  {/* Experience Section */}
+  <section id="experience" className="py-16 px-4">
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
+      <div className="max-w-4xl mx-auto space-y-8">
+        <div className="border-l-2 border-primary pl-8 relative">
+          <div className="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h3 className="text-xl font-semibold">Senior Frontend Developer</h3>
+          <p className="text-primary font-medium">Tech Company Vietnam</p>
+          <p className="text-muted-foreground">Jan 2022 - Present</p>
+          <p className="text-muted-foreground mt-2">
+            Leading frontend development for enterprise applications, mentoring junior developers, 
+            and implementing modern React patterns and best practices.
+          </p>
+        </div>
+
+        <div className="border-l-2 border-primary pl-8 relative">
+          <div className="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+          <p className="text-primary font-medium">Startup Solutions Inc</p>
+          <p className="text-muted-foreground">Mar 2020 - Dec 2021</p>
+          <p className="text-muted-foreground mt-2">
+            Developed full-stack applications using MERN stack, implemented CI/CD pipelines, 
+            and collaborated with cross-functional teams to deliver scalable solutions.
+          </p>
+        </div>
+
+        <div className="border-l-2 border-primary pl-8 relative">
+          <div className="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h3 className="text-xl font-semibold">Junior Web Developer</h3>
+          <p className="text-primary font-medium">Digital Agency Co.</p>
+          <p className="text-muted-foreground">Jun 2018 - Feb 2020</p>
+          <p className="text-muted-foreground mt-2">
+            Built responsive websites and web applications, worked with clients to 
+            implement design requirements, and maintained existing codebases.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Contact Section */}
+  <section id="contact" className="py-16 px-4 bg-muted">
+    <div className="container mx-auto max-w-4xl">
+      <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+      <div className="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+          <div className="space-y-4">
+            <p>
+              <span className="font-semibold">Email:</span><br />
+              <a href="mailto:nguyenvana@email.com" className="text-primary hover:underline">
+                nguyenvana@email.com
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold">Phone:</span><br />
+              <a href="tel:+84123456789" className="text-primary hover:underline">
+                +84 123 456 789
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold">Location:</span><br />
+              Hanoi, Vietnam
+            </p>
+          </div>
+        </div>
+        <div>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+            <div>
+              <Label htmlFor="message">Message</Label>
+              <Textarea
+                id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Your message..."
+                rows={5}
+                required
+              />
+            </div>
+            <Button type="submit" className="w-full">
+              Send Message
+            </Button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="py-8 px-4 border-t border-border">
+    <div className="container mx-auto text-center">
+      <p className="text-muted-foreground">
+        © 2024 Nguyen Van A. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
